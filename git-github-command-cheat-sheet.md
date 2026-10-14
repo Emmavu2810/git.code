@@ -16,7 +16,6 @@
   `git config --global user.email "you@example.com"`   Cấu hình email commit
 
   `git config --global --list`                         Xem cấu hình Git hiện tại
-  ----------------------------------------------------------------------------------------
 
 ## 2. Tạo hoặc tải repository
 
@@ -33,8 +32,7 @@
   `git remote add origin <URL>`       Kết nối repository local với remote
                                       tên `origin`
 
-  `git remote set-url origin <URL>`   Thay đổi URL của remote `origin`
-  -----------------------------------------------------------------------
+**  `git remote set-url origin <URL>`   Thay đổi URL của remote `origin`
 
 Ví dụ:
 
@@ -81,7 +79,6 @@ git commit -m "Describe your changes"
 
   `git pull origin main`              Lấy thay đổi từ nhánh `main` trên
                                       remote
-  -----------------------------------------------------------------------
 
 Ví dụ quy trình cập nhật:
 
@@ -110,7 +107,6 @@ git push
   `git branch -d <branch-name>`        Xóa branch local đã được gộp
 
   `git push -u origin <branch-name>`   Đẩy branch mới lên GitHub
-  ------------------------------------------------------------------------
 
 Ví dụ tạo branch để làm một task:
 
@@ -146,7 +142,7 @@ Sau đó, mở GitHub và tạo **Pull Request (PR)** để đề xuất gộp t
 
   `git stash pop`                         Lấy thay đổi gần nhất từ stash và
                                           áp dụng lại
-  ---------------------------------------------------------------------------
+  
 
 **Cẩn thận:** Trước khi chạy lệnh khôi phục hoặc xóa, hãy dùng
 `git status` và kiểm tra xem có thay đổi nào cần giữ lại không.
@@ -237,7 +233,7 @@ git push -u origin <branch-name>
   Quên branch hiện tại                Dùng `git branch --show-current`
 
   Muốn xem commit gần nhất            Dùng `git log -1 --oneline`
-  -----------------------------------------------------------------------
+
 
 ## Ghi nhớ nhanh
 
